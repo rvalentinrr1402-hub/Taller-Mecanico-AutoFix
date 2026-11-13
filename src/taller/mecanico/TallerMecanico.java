@@ -114,6 +114,7 @@ public class TallerMecanico {
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
+        
         // Folio repetido
         registrarVenta(new ServicioAfinacion("F001", "Duplicado", 3)); //solo se verifica el folio, no el demas contenido
 
@@ -171,7 +172,7 @@ public class TallerMecanico {
                 }
             }
         }
-        System.out.printf("\nTotal a reembolsar si se cancelara todo hoy con 48h:", totalReembolsos);
+        System.out.printf("\nTotal a reembolsar si se cancelara todo hoy con 48h: $" + totalReembolsos);
 
         //intentando canselar datos erroneos
         System.out.println("\n=== intento cancelacion ===");
